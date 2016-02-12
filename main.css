@@ -1,0 +1,267 @@
+/* TODO
+ * make it so that the top 20 will always dispay nothing when scroll
+ */
+@font-face {
+	font-family: titleFont;
+	src: url(fonts/us101-webfont.woff);
+	font-weight: 500;
+}
+
+@font-face {
+	font-family: bodyFont;
+	src: url(fonts/francophilsans-webfont.woff);
+	font-weight: 500;
+}
+
+@font-face {
+	font-family: otherBodyFont;
+	src: url(fonts/lato-reg-webfont.woff);
+	font-weight: 500;
+}
+
+body {
+	background-color: #F0F0F0;
+}
+
+.menu {
+	position: fixed;
+	left: 30px;
+	top: 20px;
+	border-top: 1px solid #97948D;
+	padding: 10px 0;
+	width: 230px;
+	font-size: 1.2em;
+}
+
+.menu-title {
+	color: #DF4231;
+	font-family: titleFont, Arial, Helvetica, sans-serif;
+	font-size: 2em;
+}	
+
+.menu-item{
+	padding: 5px 0;
+	border-bottom: 1px solid #97948D;
+	height: 27px;
+}
+
+.hover {
+	width: 0px;
+	z-index: 3;	
+	color: #F0F0F0;
+	display: block;
+	font-size: 1.3em;
+	text-decoration: none;
+	font-family: titleFont, Arial, Helvetica, sans-serif;
+	position: absolute;
+	overflow: hidden;
+	height: 27px;
+}
+
+.menu-link{
+	display: block;
+	color: #97948D;
+	text-decoration: none;
+	font-size: 1.3em;
+	font-family: titleFont, Arial, Helvetica, sans-serif;
+	z-index: 2;
+	position: absolute;
+}
+
+.menu-highlight {
+	height: 27px;
+}
+
+.scroll-cover {
+	background-color: #F0F0F0;
+	width: 500px;
+	height: 20px;
+	position: fixed;
+	top: 0px;
+	left: 300px;
+	z-index: 3;
+}
+
+.content {
+	position: absolute;
+	left: 300px;
+	top: 20px;
+	width: 500px;
+	font-family: otherBodyFont, Arial, Helvetica, sans-serif;
+	font-size: 1em;
+	font-weight: 500;
+	color: #696969;
+}
+
+/********************Home Page************************/
+
+/*.welcome-paragraph {
+}*/
+
+/******************Syllabus Page**********************/
+
+.head-bold {
+	margin: 0 0 5px 0;
+	font-family: titleFont, Arial, Helvetica, sans-serif;
+	font-weight: 400;
+	color: #DF4231;
+}
+
+.description {
+	margin: 0 0 25px 0;
+}
+
+/****************Documentation Page******************/
+
+.about-documentation {
+	margin-bottom: 25px;
+}
+
+.doc-icon {
+	color: #DF4231;
+	font-size: 2em;
+	width: 30px;
+	height: 30px;
+	margin: 0 0 5px 100px;
+}
+
+.doc-box {
+	border: 1px dashed #97948D;
+	margin: auto;
+	width: 250px;
+	padding: 10px;
+}
+
+.doc-link {
+	text-decoration: none;
+	color: #696969;
+	display: block;
+}
+
+.doc-link:hover {
+	color: #DF4231;
+}
+
+/******************Competitors Page********************/
+
+.about-competitors {
+	margin-bottom: 25px;
+}
+
+.fall, .spring {
+	width: 200px;
+}
+
+.spring {
+	float: right;
+	margin-right: 200px;
+}
+
+.competition-link {
+	display: block;
+	text-decoration: none;
+	color: #696969;
+}
+
+.competition-link:hover {
+	color: #DF4231;
+}
+
+/*******************Pictures Page*********************/
+
+.about-pictures {
+	margin-bottom: 20px;
+}
+
+.row {
+	margin: 0;
+}
+
+.album-name, .gallery-title {
+	margin: 0;
+	font-family: titleFont;
+	font-weight: 400;
+	color: #DF4231;
+}
+
+.album-button-wrapper {
+	display: table-cell;
+	padding: 0 20px 20px 0;
+}
+
+.album-button {
+	text-decoration: none;
+}
+
+.album-name {
+	margin-bottom: 5px;
+	display: inline;
+}
+
+.album-icon {
+	width: 150px;
+}
+
+/********************Gallery Page*********************/
+
+.gallery-view {
+	display: none;
+}
+
+.return-button {
+
+}
+
+.return-icon {
+	color: #DF4231;
+	font-size: 1.5em;
+	text-decoration: none;
+	float: right;
+}
+
+.gallery-title {
+	font-size: 1.5em;
+	margin-bottom: 10px;
+}
+
+.image-item {
+	display: none;
+}
+
+.image {
+	width: 500px;
+}
+
+.image0 {
+	display: block;
+}
+
+.caption {
+	font-style: italic;
+	font-size: .8em;
+}
+
+.album-nav {
+	margin-top: 15px;
+	display: block;
+	text-align: center;
+}
+
+.prev-button, .next-button {
+	font-size: 1.2em;
+}
+
+.prev-button:hover, .next-button:hover {
+	cursor: pointer;
+}
+
+.prev-button {
+	margin-right: 370px;
+	visibility: hidden;
+}
+
+.prev-icon, .next-icon {
+	color: #DF4231;
+	font-size: 1.5em;
+	vertical-align: middle;
+}
